@@ -1,0 +1,22 @@
+{
+  "name": "simple-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve . -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/shfshanyue/simple-deploy.git"
+  },
+  "author": "shfshanyue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/shfshanyue/simple-deploy/issues"
+  },
+  "homepage": "https://gitlab.com/shfshanyue/simple-deploy#readme",
+  "devDependencies": {
+    "serve": "^13.0.2"
+  }
+}
