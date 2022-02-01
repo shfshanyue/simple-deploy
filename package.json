@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "serve . -p 3000"
+    "start": "serve . -p 3000",
+    "start:server": "node server-fs.js"
   },
   "repository": {
     "type": "git",

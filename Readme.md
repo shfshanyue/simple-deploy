@@ -12,7 +12,7 @@
 $ docker build -f node.Dockerfile -t simple-node-app .
 
 # 根据该镜像运行容器
-$ docker run -d --rm -p 3000:3000 simple-app
+$ docker run -d --rm -p 3000:3000 simple-node-app
 ```
 
 ## nginx版: docker cli
@@ -21,7 +21,7 @@ $ docker run -d --rm -p 3000:3000 simple-app
 
 ``` bash
 # 构建一个名为 simple-app 的镜像
-$ docker build -f nginx.Dockerfile -t simple-app .
+$ docker build -f nginx.Dockerfile -t simple-nginx-app .
 
 # 根据该镜像运行容器
 $ docker run -d --rm -p 3000:80 simple-nginx-app
@@ -31,5 +31,5 @@ $ docker run -d --rm -p 3000:80 simple-nginx-app
 使用 `docker-compose` 运行容器，同时部署 node 版与 nginx 版
 
 ``` bash
-$ docker-compose up
+$ docker-compose up --build
 ```
