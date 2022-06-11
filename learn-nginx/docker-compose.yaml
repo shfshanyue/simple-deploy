@@ -62,3 +62,10 @@ services:
     volumes:
       - ./proxy.conf:/etc/nginx/conf.d/default.conf
       - .:/usr/share/nginx/html
+  50x:
+    image: nginx:alpine
+    ports:
+      - 8400:80
+    volumes:
+      - ./50x.conf:/etc/nginx/conf.d/default.conf
+      - .:/usr/share/nginx/html
