@@ -52,14 +52,22 @@ $ docker-compose up --build
 
 通过该配置文件可以在容器中学习 nginx，不再受限于宿主环境。
 
-``` bash
-$ docker-compose -f learn-nginx.docker-compose.yaml up
-```
+**学习 nginx 请先进入 [learn-nginx](https://github.com/shfshanyue/simple-deploy/tree/master/learn-nginx) 目录。**
 
-或者，我已将它封装在了 `npm scripts`
-
-``` bash
-$ npm run nginx:learn
-```
+API 文档置于 [learn nginx by docker](https://www.apifox.cn/apidoc/project-1264553/api-28699589/shanyue)，可使用 [Apifox](https://www.apifox.cn/a1shanyue) 直接打开。
 
 在学习过程修改了配置文件后，可重启容器进行更新。
+
+### location
+
+``` bash
+$ docker-compose up location
+
+$ docker-compose up location2 api
+```
+
+### proxy
+
+``` bash
+$ docker-compose up proxy
+```
