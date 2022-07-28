@@ -1,5 +1,7 @@
 # 使用 Docker 部署前端之简单版
 
+本仓库为[前端部署专栏](https://q.shanyue.tech/deploy/simple-intro.html)配套代码。
+
 + [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
 + [Compose file Reference](https://docs.docker.com/compose/compose-file/compose-file-v3/)
 
@@ -50,13 +52,20 @@ $ docker-compose up --build
 
 ## Nginx 学习版
 
-通过该配置文件可以在容器中学习 nginx，不再受限于宿主环境。
-
-**学习 nginx 请先进入 [learn-nginx](https://github.com/shfshanyue/simple-deploy/tree/master/learn-nginx) 目录。**
+通过该配置文件可以在容器中学习 nginx，不再受限于宿主环境。**学习 nginx 请先进入 [learn-nginx](https://github.com/shfshanyue/simple-deploy/tree/master/learn-nginx) 目录。**
 
 API 文档置于 [learn nginx by docker](https://www.apifox.cn/apidoc/project-1264553/api-28699589/shanyue)，可使用 [Apifox](https://www.apifox.cn/a1shanyue) 直接打开。
 
-在学习过程修改了配置文件后，可重启容器进行更新。
+可通过以下步骤，在 [apifox](https://www.apifox.cn/a1shanyue) 中调试 nginx 接口。
+
+1. [下载 Apifox](https://www.apifox.cn/a1shanyue)
+2. 在 Apifox 中克隆该项目
+3. 在 Github 中克隆[示例仓库](https://github.com/shfshanyue/simple-deploy/tree/master/learn-nginx)
+4. 克隆下来后，进入 learn-nginx 目录
+5. `docker-compose up` 启动容器
+6. 打开 Apifox 调试接口学习 nginx
+
+![](https://static.shanyue.tech/images/22-07-11/clipboard-8971.3bfb0d.webp)
 
 ### location
 
